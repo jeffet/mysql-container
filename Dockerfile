@@ -1,4 +1,4 @@
-FROM mysql:5.6
+FROM registry.ng.bluemix.net/floresam/mysql:fixed
 
 # Copy the database initialize script: 
 # Contents of /docker-entrypoint-initdb.d are run on mysqld startup
@@ -9,4 +9,5 @@ ENV MYSQL_ROOT_PASSWORD=password
 ENV MYSQL_DATABASE=todo
 ENV MYSQL_USER=dbuser
 ENV MYSQL_PASSWORD=password
-CMD ["mysqld","--skip-performance-schema"]
+#CMD ["mysqld","--skip-performance-schema"]
+CMD ["tail","-f","/dev/null"]
