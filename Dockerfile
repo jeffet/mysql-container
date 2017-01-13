@@ -9,5 +9,5 @@ ENV MYSQL_ROOT_PASSWORD=password
 ENV MYSQL_DATABASE=todo
 ENV MYSQL_USER=dbuser
 ENV MYSQL_PASSWORD=password
-#CMD ["mysqld","--skip-performance-schema"]
-CMD ["tail","-f","/dev/null"]
+CMD ["mysqld","--skip-performance-schema"]
+#CMD ["tail","-f","/dev/null"]
