@@ -1,4 +1,4 @@
-FROM registry.ng.bluemix.net/floresam/mysql:fixed
+FROM registry.ng.bluemix.net/tennenjl/mysql:fixed
 
 # Copy the database initialize script: 
 # Contents of /docker-entrypoint-initdb.d are run on mysqld startup
